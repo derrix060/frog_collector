@@ -26,8 +26,8 @@ def test_frog_requests():
 
     size = len(urls)
     for idx, url in enumerate(urls):
-        if idx < 1000:
-            continue
+        # if idx < 1000:
+        #     continue
         url = url.strip()
         print(f"Processing URL {idx + 1}/{size}: {url}")
         driver.get(url)
